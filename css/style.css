@@ -3,17 +3,48 @@ body {
 }
 
 #zoomback {
-    position: absolute;
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 8);
+    background-color: rgba(0, 0, 0, 0.8);
     display: none;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 #zoomimg {
-    width: 50%;
+    width: 70%;
+    max-width: 800px;
+    max-height: 70vh;
     border: solid 5px #fff;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#img-size {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.zoom {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.deka {
+    animation: deka 0.3s ease-out;
+}
+
+@keyframes deka {
+    from {
+        transform: scale(0);
+    }
 }
