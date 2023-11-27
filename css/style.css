@@ -1,0 +1,19 @@
+body {
+    position: relative;
+}
+
+#zoomback {
+    position: absolute;
+    top: 0;
+    width: 100vm;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zoomimg {
+    width: 50%;
+    border: solid 5px #fff;
+}
